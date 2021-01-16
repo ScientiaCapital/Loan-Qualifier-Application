@@ -7,6 +7,7 @@ Example:
     $ python app.py
 """
 import sys
+<<<<<<< HEAD
 import fire 
 import questionary
 from pathlib import Path
@@ -16,6 +17,14 @@ from qualifier.utils.fileio import load_csv
 
 from qualifier.utils.fileio import save_csv
 
+=======
+import fire
+import questionary
+from pathlib import Path
+
+from qualifier.utils.fileio import load_csv
+
+>>>>>>> 3603e1d9866ca031a25c2bc25843e31cfcfb6ca5
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
     calculate_loan_to_value_ratio,
@@ -106,6 +115,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
 
 def save_qualifying_loans(qualifying_loans):
+<<<<<<< HEAD
     answer = questionary.confirm("Would you like to save the list of qualifying loans?").ask()
     if answer:
         output_path = questionary.text("Enter output file path (.csv):").ask()
@@ -117,6 +127,8 @@ def save_qualifying_loans(qualifying_loans):
     save_csv(output_path, header, qualifying_loans)
 
 
+=======
+>>>>>>> 3603e1d9866ca031a25c2bc25843e31cfcfb6ca5
     """Saves the qualifying loans to a CSV file.
 
     Args:
@@ -124,7 +136,11 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 3603e1d9866ca031a25c2bc25843e31cfcfb6ca5
 
 def run():
     """The main function for running the script."""
