@@ -7,35 +7,34 @@ Example:
     $ python app.py
 """
 import sys
-<<<<<<< HEAD
 import fire 
 import questionary
 from pathlib import Path
 import csv
+"""
+This will import the necessary libraries that will allow for proper functionality of app.py
+"""
 
 from qualifier.utils.fileio import load_csv
 
 from qualifier.utils.fileio import save_csv
 
-=======
-import fire
-import questionary
-from pathlib import Path
-
-from qualifier.utils.fileio import load_csv
-
->>>>>>> 3603e1d9866ca031a25c2bc25843e31cfcfb6ca5
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
     calculate_loan_to_value_ratio,
 )
-
+"""
+Imports the qualifiers functions from file within app.py 
+"""
 from qualifier.filters.max_loan_size import filter_max_loan_size
 from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 
+"""
+Imports the filtering fuctions from file within app.py
 
+"""
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
 
@@ -113,9 +112,22 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
     return bank_data_filtered
 
+    """Saves the qualifying loans to a CSV file.
 
+    Args:
+        qualifying_loans (list of lists): The qualifying bank loans.
+    """
+    # @TODO: Complete the usability dialog for savings the CSV Files.
+    # YOUR CODE HERE!
+    """
+    Instructions to get csv and output path
+
+    Args: 
+        qualifying_loans (list)
+
+    saves qualifying_loans to csv_file
+    """
 def save_qualifying_loans(qualifying_loans):
-<<<<<<< HEAD
     answer = questionary.confirm("Would you like to save the list of qualifying loans?").ask()
     if answer:
         output_path = questionary.text("Enter output file path (.csv):").ask()
@@ -124,23 +136,7 @@ def save_qualifying_loans(qualifying_loans):
 
     header = ["Lender","Max Loan Amount","Max LTV","MYax DTI","Min Credit Score","Interest Rate"]
 
-    save_csv(output_path, header, qualifying_loans)
-
-
-=======
->>>>>>> 3603e1d9866ca031a25c2bc25843e31cfcfb6ca5
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> 3603e1d9866ca031a25c2bc25843e31cfcfb6ca5
+    save_csv(output_path, header, qualifying_loans) 
 
 def run():
     """The main function for running the script."""
