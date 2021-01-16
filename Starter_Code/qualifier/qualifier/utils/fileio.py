@@ -28,12 +28,9 @@ def load_csv(csvpath):
         for row in csvreader:
             data.append(row)
     return data
-<<<<<<< HEAD
 
 def save_csv(output_path, header, qaulifying_loans):
     with open(output_path, "w",newline= '') as csv_file:
         csv_file = csv.writer(csv_file)
         csv_file.writerow(header)
         csv_file.writerows(qaulifying_loans)
-=======
->>>>>>> 3603e1d9866ca031a25c2bc25843e31cfcfb6ca5
