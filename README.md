@@ -3,7 +3,7 @@
 **Welcome to the Loan Qualifcation App!** 
 The loan qualifier application will help home loan companies streamline their application process.
 
-By inputting details at the comman line the homeowner wi 
+By inputting details at the comman line the homeowner will get list of banks.
 ---
 ## Technologies
 *Built using Python 3.7.9 64-bit
