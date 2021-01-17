@@ -32,5 +32,5 @@ def load_csv(csvpath):
 def save_csv(output_path, header, qaulifying_loans):
     with open(output_path, "w",newline= '') as csv_file:
         csv_file = csv.writer(csv_file)
-        csv_file.writerow(header)
+        csv_file.writerows(header)
         csv_file.writerows(qaulifying_loans)

@@ -7,9 +7,9 @@ Example:
     $ python app.py
 """
 import sys
+from pathlib import Path
 import fire 
 import questionary
-from pathlib import Path
 import csv
 """
 This will import the necessary libraries that will allow for proper functionality of app.py
@@ -48,7 +48,6 @@ def load_bank_data():
         sys.exit(f"Oops! Can't find this path: {csvpath}")
 
     return load_csv(csvpath)
-
 
 def get_applicant_info():
     """Prompt dialog to get the applicant's financial information.
@@ -132,7 +131,7 @@ def save_qualifying_loans(qualifying_loans):
     if answer:
         output_path = questionary.text("Enter output file path (.csv):").ask()
     if not answer:
-        sys.exit("Hope you liked using the program.  Have a great day!!!")
+        sys.exit("Hope you find this information helpful.  Have a great day!!!")
 
     header = ["Lender","Max Loan Amount","Max LTV","MYax DTI","Min Credit Score","Interest Rate"]
 
