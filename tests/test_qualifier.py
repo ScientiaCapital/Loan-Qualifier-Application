@@ -1,5 +1,4 @@
 # Import pathlib
-from filters.max_loan_size import filter_max_loan_size
 from pathlib import Path
 import csv
 from qualifier.utils.calculators import calculate_monthly_debt_ratio
@@ -47,7 +46,7 @@ def test_filters():
 banks = filter_max_loan_size(loan, bank_data)
 print(len(banks))
 assert len(banks) == 18
-current_credit_score = credit_score.filter_credit_score(current_credit_score, banks)
+current_credit_score = filter_credit_score(current_credit_score, banks)
 assert len(current_credit_score) == 9
 test_save_csv(Path(save_csv).exists())
 
