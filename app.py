@@ -8,7 +8,7 @@ Example:
 """
 import sys
 from pathlib import Path
-import fire 
+import fire
 import questionary
 import csv
 """
