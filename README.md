@@ -66,7 +66,7 @@ Your qualifying loans are now available and you will be prompted with a message 
 
 New development created by Scientia Capital. 
 
-**Code from Initial Commit originates from UC Berkeley FinTech Bootcamp and Scvientia Capital does not claim original ownership nor scholarship**.
+**Code from Initial Commit originates from UC Berkeley FinTech Bootcamp and Scientia Capital does not claim original ownership nor scholarship**.
 
 ---
 
