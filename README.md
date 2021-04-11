@@ -2,7 +2,7 @@
 
 A command-line-interface application which determines available mortgage loans based upon an applicant's financial information.
 
-![](https://github.com/ScientiaCapital/Loan-Qualifier-Application/blob/main/Loan-Qualifier-Application/Images/cash-loans.jpeg)
+![](https://github.com/ScientiaCapital/Loan-Qualifier-Application/blob/main/Images/cash-loans.jpeg)
 
 ---
 
