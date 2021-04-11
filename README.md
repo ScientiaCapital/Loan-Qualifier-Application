@@ -34,7 +34,7 @@ pip install pytest
 
 ![Program Execution Example](https://github.com/ScientiaCapital/Loan-Qualifier-Application/blob/main/Images/Screen%20Shot%202021-04-11%20at%202.27.05%20PM.png)
 
-![Output File Example]()
+![Output File Example](https://github.com/ScientiaCapital/Loan-Qualifier-Application/blob/main/Images/Screen%20Shot%202021-04-11%20at%203.07.40%20PM.png)
 
 ---
 
